@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+ // Create a function that returns the data type of a given variable.
+function dataType(value) {
+    var typeOf;
+
+    typeOf = typeof value;
+
+    if (typeOf !== "object"){
+        return typeOf;
+    }else{
+        
+        if (value === null){
+            return "null";
+        }
+
+        if (value instanceof Date){
+            return "date";
+        }
+        
+        if (Array.isArray(value)){
+            return "array";
+        }
+
+        if (typeOf === "undefined"){
+            return undefined;
+        }else{
+            return "object";
+        }
+    }
+}
+</script>
+
+</head>
+<body>
+</body>
+</html
